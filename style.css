@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'popins',sans-serif;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153677,#4e085f);
+    padding: 10px;
+}
+.main-box{
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 100px auto;
+    padding: 40px 30px 70px;
+}
+.head{
+    padding: 10px 0px 20px;
+}
+.head h2{
+    text-align: center;
+    margin-bottom: 32px;
+    color: #4e085f;
+}
+.search-panel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.seachBox{
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #4e085f;
+}
+.search-panel button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #4e085f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.clear-All button{
+    color: black;
+    margin-left: 87%;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    /* border: 1px solid #4e085f; */
+    padding: 12px 8px 12px 50px;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+}
+ul li::before{
+    content: '';
+    position: absolute; 
+    /* learn about meaning of position relative and absolute - https://www.youtube.com/watch?v=aFtByxWjfLY */
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+    
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+ul li .span2{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+ul li .span2:hover{
+    background: #edeef0;
+}
+ul li .span1 img{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    right: 45px;
+    top: 5px;
+    cursor: pointer;
+}
